@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Organic wax radial gradient -->
+    <radialGradient id="waxGrad" cx="45%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#DFCA9B"/>
+      <stop offset="35%" stop-color="#C6A56B"/>
+      <stop offset="75%" stop-color="#A58245"/>
+      <stop offset="100%" stop-color="#6F5325"/>
+    </radialGradient>
+    <radialGradient id="innerWax" cx="40%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#EADBBD"/>
+      <stop offset="40%" stop-color="#C6A56B"/>
+      <stop offset="85%" stop-color="#967236"/>
+      <stop offset="100%" stop-color="#5B411A"/>
+    </radialGradient>
+    <filter id="waxShadow" x="-20%" y="-20%" width="145%" height="145%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#221A0E" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Organic Irregular Wax Edge Base -->
+  <path d="M100,12 
+           C122,10 142,16 160,30 
+           C175,42 188,60 190,82 
+           C192,102 184,124 175,142 
+           C165,160 148,176 130,185 
+           C110,195 86,192 68,185 
+           C50,178 32,162 22,145 
+           C10,126 8,104 12,82 
+           C16,62 30,42 48,28 
+           C65,15 82,14 100,12 Z" 
+        fill="url(#waxGrad)" filter="url(#waxShadow)"/>
+
+  <!-- Inner Embossed Ridge -->
+  <circle cx="100" cy="100" r="68" fill="none" stroke="#6F5325" stroke-width="3" opacity="0.5"/>
+  <circle cx="99" cy="99" r="67" fill="none" stroke="#DFCA9B" stroke-width="2" opacity="0.7"/>
+
+  <!-- Inner Wax Medallion -->
+  <circle cx="100" cy="100" r="64" fill="url(#innerWax)"/>
+
+  <!-- Dotted decorative inner ring -->
+  <circle cx="100" cy="100" r="56" fill="none" stroke="#6F5325" stroke-width="1" stroke-dasharray="2, 4" opacity="0.7"/>
+  <circle cx="99" cy="99" r="56" fill="none" stroke="#F5E7CD" stroke-width="0.8" stroke-dasharray="2, 4" opacity="0.9"/>
+
+  <!-- Subtle Laurel Leaves in Wax -->
+  <g fill="none" stroke="#5B411A" stroke-width="1.2" opacity="0.65">
+    <path d="M70,125 C62,112 62,88 72,75"/>
+    <path d="M130,125 C138,112 138,88 128,75"/>
+  </g>
+  <g fill="none" stroke="#F5E7CD" stroke-width="1.2" opacity="0.8" transform="translate(-1,-1)">
+    <path d="M70,125 C62,112 62,88 72,75"/>
+    <path d="M130,125 C138,112 138,88 128,75"/>
+  </g>
+
+  <!-- Embossed Monogram Placeholder Stamp (A & R) -->
+  <!-- Shadow (debossed look) -->
+  <text x="101" y="111" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="600" font-style="italic" fill="#4A3414" text-anchor="middle" letter-spacing="2">K&amp;D</text>
+  <!-- Highlight -->
+  <text x="99" y="109" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="600" font-style="italic" fill="#FFF3DB" text-anchor="middle" letter-spacing="2">K&amp;D</text>
+</svg>
